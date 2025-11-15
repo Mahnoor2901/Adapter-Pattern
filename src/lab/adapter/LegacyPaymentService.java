@@ -19,4 +19,13 @@ System.out.println("[LegacyPaymentService] Merchant: " + merchantId
 // Pretend some internal checks happen here...
 System.out.println("[LegacyPaymentService] Status: PAYMENT_OK");
 }
+
+public void refundPayment(int cents) {
+// Simulate some legacy behavior and print to stdout
+System.out.println("[LegacyPaymentService] Merchant: " + merchantId
+
++ " | Refund processed: " + cents + " cents");
+// Pretend some internal checks happen here...
+System.out.println("[LegacyPaymentService] Status: REFUND_OK");
+}
 }

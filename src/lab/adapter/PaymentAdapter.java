@@ -14,4 +14,11 @@ int cents = (int) Math.round(dollars * 100);
 System.out.println("[PaymentAdapter] Converting $" + dollars + " -> " + cents + "cents");
 legacy.makePayment(cents);
 }
+
+  public void refund(double dollars) {
+        // Convert dollars to cents safely: round to nearest cent
+        int cents = (int) Math.round(dollars * 100);
+        System.out.println("[PaymentAdapter] Refunding $" + dollars + " -> " + cents + " cents");
+        legacy.refundPayment(cents);
+    }
 }
